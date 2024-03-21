@@ -1,0 +1,18 @@
+.button {
+    color: #0b1f33;
+    background: #ffdd2d;
+    border-radius: 7px;
+    transition: .3s all;
+    font-size: 16px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    border: none;
+    font-family: "Tilda Sans", sans-serif;
+    &:hover {
+        background: #1045ba;
+        color: #ffdd2d;
+    }
+}

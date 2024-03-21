@@ -1,0 +1,21 @@
+.title {
+    color: #0b1f33;
+    font-size: 40px;
+    line-height: 44px;
+    font-weight: 700;
+    span {
+        color: rgb(82, 137, 243);
+    }
+}
+@media (max-width: 960px) {
+    .title {
+        font-size: 28px;
+        line-height: 31px;
+    }
+}
+@media (max-width: 640px) {
+    .title {
+        font-size: 30px;
+        line-height: 35px;
+    }
+}

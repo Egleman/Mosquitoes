@@ -1,0 +1,111 @@
+.other {
+    padding: 60px 0;
+    &__grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 40px;
+    }
+    &__card {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        box-shadow: 0px 2px 10px 0px rgba(11,31,51,0.1);
+        border-radius: 30px;
+        background: #fff;
+        padding: 30px;
+        box-sizing: border-box;
+        &-title {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            p {
+                color: #0b1f33;
+                font-size: 24px;
+                line-height: 26px;
+                font-weight: 600;
+            }
+            img {
+                width: 50px;
+                height: 50px;
+                display: flex;
+                flex-shrink: 0;
+            }
+        }
+        &-text {
+            color: #5289f3;
+            font-size: 20px;
+            line-height: 22px;
+            font-weight: 400;
+            &_bold {
+                color: #5289f3;
+                font-size: 26px;
+                line-height: 29px;
+                font-weight: 700;
+            }
+        }
+    }
+}
+@media (max-width: 960px) {
+    .other {
+        padding: 40px 0;
+        &__grid {
+            max-width: 620px;
+            width: 100%;
+            margin: 0 auto;
+            grid-template-columns: 1fr;
+            gap: 15px;
+        }
+    }
+}
+@media (max-width: 480px) {
+    .other {
+        &__card {
+            padding: 20px;
+            border-radius: 20px;
+            zoom: 1.347;
+            &-title {
+                gap: 15px;
+                p {
+                    font-size: 20px;
+                    line-height: 22px;
+                    br {
+                        display: none;
+                    }
+                }
+                img {
+                    width: 40px;
+                    height: 40px;
+                }
+            }
+            &-text {
+                line-height: 19px;
+                font-size: 17px;
+                &_bold {
+                    font-size: 22px;
+                    line-height: 24px;
+                }
+            }
+        }
+    }
+}
+@media (max-width: 400px) {
+    .other {
+        &__card {
+            zoom: 1.2;
+        }
+    }
+}
+@media (max-width: 380px) {
+    .other {
+        &__card {
+            zoom: 1.134;
+        }
+    }
+}
+@media (max-width: 360px) {
+    .other {
+        &__card {
+            zoom: 1.05;
+        }
+    }
+}

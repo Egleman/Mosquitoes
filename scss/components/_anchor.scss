@@ -1,0 +1,11 @@
+.anchor {
+    position: absolute;
+    left: -1px;
+    height: 96px;
+    bottom: 100%;
+}
+@media (max-width: 96px) {
+    .anchor {
+        height: 56px;
+    }
+}
