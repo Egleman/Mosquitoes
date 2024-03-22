@@ -51,7 +51,7 @@ const checkPhonesUtm = () => {
         })
     }
 }
-// checkPhonesUtm();
+checkPhonesUtm();
 const modalLinks = document.querySelectorAll('[toggle]');
 modalLinks.forEach(link => {
     link.addEventListener('click', (e) => {
@@ -89,6 +89,9 @@ scrollLinks.forEach(link => {
         const blockId = link.getAttribute('href');
         if (headerMobileMenu.classList.contains('active')) {
             headerMobileMenu.classList.remove('active');
+        }
+        if (headerBurgerBtn.classList.contains('active')) {
+            headerBurgerBtn.classList.remove('active');
         }
         document.querySelector(blockId).scrollIntoView({
             behavior: 'smooth',
@@ -157,15 +160,12 @@ var swiper = new Swiper(".example__swiper", {
         prevEl: '.example__button.prev',
     },
     breakpoints: {
-        
         0: {
           slidesPerView: 1,
         },
-        // when window width is >= 480px
         640: {
             slidesPerView: 1.9,
         },
-        // when window width is >= 640px
         960: {
             slidesPerView: 2.1,
         }

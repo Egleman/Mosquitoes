@@ -4,10 +4,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css" />
     <link rel="stylesheet" href="./css/swiper-bundle.min.css">
     <link rel="stylesheet" href="./css/style.css">
     <title>Москитные сетки на окна</title>
+    <!-- Yandex.Metrika counter -->
+    <script type="text/javascript">
+        (function (m, e, t, r, i, k, a) {
+            m[i] = m[i] || function () { (m[i].a = m[i].a || []).push(arguments) };
+            m[i].l = 1 * new Date();
+            for (var j = 0; j < document.scripts.length; j++) { if (document.scripts[j].src === r) { return; } }
+            k = e.createElement(t), a = e.getElementsByTagName(t)[0], k.async = 1, k.src = r, a.parentNode.insertBefore(k, a)
+        })
+            (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+        ym(96630363, "init", {
+            clickmap: true,
+            trackLinks: true,
+            accurateTrackBounce: true,
+            webvisor: true
+        });
+    </script>
+    <noscript>
+        <div><img src="https://mc.yandex.ru/watch/96693045" style="position:absolute; left:-9999px;" alt="" /></div>
+    </noscript>
+    <!-- /Yandex.Metrika counter -->
 </head>
 
 <body>
@@ -18,14 +39,18 @@
                 <div class="header__controls">
                     <nav class="header__nav">
                         <ul class="header__list">
-                            <li class="header__list-item"><a href="#" class="header__list-link" scroll>Типы
+                            <li class="header__list-item"><a href="#types" class="header__list-link" scroll>Типы
                                     конструкций</a></li>
-                            <li class="header__list-item"><a href="#" class="header__list-link" scroll>Типы полотен</a>
+                            <li class="header__list-item"><a href="#types-grid" class="header__list-link" scroll>Типы
+                                    полотен</a>
                             </li>
-                            <li class="header__list-item"><a href="#" class="header__list-link" scroll>Портфолио</a>
+                            <li class="header__list-item"><a href="#example" class="header__list-link"
+                                    scroll>Портфолио</a>
                             </li>
-                            <li class="header__list-item"><a href="#" class="header__list-link" scroll>Отзывы</a></li>
-                            <li class="header__list-item"><a href="#" class="header__list-link" scroll>Контакты</a></li>
+                            <li class="header__list-item"><a href="#reviews" class="header__list-link" scroll>Отзывы</a>
+                            </li>
+                            <li class="header__list-item"><a href="#contacts" class="header__list-link"
+                                    scroll>Контакты</a></li>
                         </ul>
                     </nav>
                     <div class="header__info">
@@ -44,11 +69,13 @@
         <div class="header__menu">
             <div class="header__menu-wrapper">
                 <ul class="header__list">
-                    <li class="header__list-item"><a href="#" class="header__list-link" scroll>Типы конструкций</a></li>
-                    <li class="header__list-item"><a href="#" class="header__list-link" scroll>Типы полотен</a></li>
-                    <li class="header__list-item"><a href="#" class="header__list-link" scroll>Портфолио</a></li>
-                    <li class="header__list-item"><a href="#" class="header__list-link" scroll>Отзывы</a></li>
-                    <li class="header__list-item"><a href="#" class="header__list-link" scroll>Контакты</a></li>
+                    <li class="header__list-item"><a href="#types" class="header__list-link" scroll>Типы конструкций</a>
+                    </li>
+                    <li class="header__list-item"><a href="#types-grid" class="header__list-link" scroll>Типы
+                            полотен</a></li>
+                    <li class="header__list-item"><a href="#example" class="header__list-link" scroll>Портфолио</a></li>
+                    <li class="header__list-item"><a href="#reviews" class="header__list-link" scroll>Отзывы</a></li>
+                    <li class="header__list-item"><a href="#contacts" class="header__list-link" scroll>Контакты</a></li>
                 </ul>
                 <div class="header__info">
                     <a href="tel:79999999999" class="header__phone" data-phone="utm">+7 (999) 999-99-99</a>
@@ -121,6 +148,7 @@
             </div>
         </section>
         <section class="types">
+            <div class="anchor" id="types"></div>
             <div class="container">
                 <div class="types__top">
                     <h2 class="title types__title">Типы конструкций<br> москитных сеток</h2>
@@ -223,6 +251,7 @@
             </div>
         </section>
         <section class="reviews">
+            <div class="anchor" id="reviews"></div>
             <div class="container">
                 <h2 class="title reviews__title">Реальные отзывы от наших клиентов</h2>
                 <h3 class="reviews__subtitle">Честные отзывы о нашей компании</h3>
@@ -307,6 +336,7 @@
             </div>
         </section>
         <section class="types-grid">
+            <div class="anchor" id="types-grid"></div>
             <div class="container">
                 <div class="types-grid__top">
                     <h2 class="title types-grid__title">Типы полотна<br> москитных сеток</h2>
@@ -317,7 +347,8 @@
                         <div class="types-grid__card-wrapper">
                             <div class="types-grid__card-block">
                                 <p class="types-grid__card-title">Стандарт</p>
-                                <p class="types-grid__card-text">Оптимальная по цене сетка с технологией FiberGlass. Высокая прочность и надежность нитей. Подходит для всех систем.</p>
+                                <p class="types-grid__card-text">Оптимальная по цене сетка с технологией FiberGlass.
+                                    Высокая прочность и надежность нитей. Подходит для всех систем.</p>
                                 <div class="types-grid__card-price">
                                     <span>Стоимость:</span>
                                     <p>от 990 руб/м2</p>
@@ -333,7 +364,8 @@
                         <div class="types-grid__card-wrapper">
                             <div class="types-grid__card-block">
                                 <p class="types-grid__card-title">Антикошка</p>
-                                <p class="types-grid__card-text">Усиленные нити и 100% защиты от когтей кошек. Затемнение сетки создает визуальный барьер для любого животного.</p>
+                                <p class="types-grid__card-text">Усиленные нити и 100% защиты от когтей кошек.
+                                    Затемнение сетки создает визуальный барьер для любого животного.</p>
                                 <div class="types-grid__card-price">
                                     <span>Стоимость:</span>
                                     <p>от 1 990 руб/м2</p>
@@ -349,7 +381,8 @@
                         <div class="types-grid__card-wrapper">
                             <div class="types-grid__card-block">
                                 <p class="types-grid__card-title">Антимошка</p>
-                                <p class="types-grid__card-text">Микроячейки сетки 0,8 мм недежно защищают дом от мошек, мелкой пыли с улицы, пыльцы и дождя.</p>
+                                <p class="types-grid__card-text">Микроячейки сетки 0,8 мм недежно защищают дом от мошек,
+                                    мелкой пыли с улицы, пыльцы и дождя.</p>
                                 <div class="types-grid__card-price">
                                     <span>Стоимость:</span>
                                     <p>от 1 690 руб/м2</p>
@@ -365,7 +398,8 @@
                         <div class="types-grid__card-wrapper">
                             <div class="types-grid__card-block">
                                 <p class="types-grid__card-title">Антипыльца</p>
-                                <p class="types-grid__card-text">Полотно сетки антипыль способствует защите от пыльцы и мелкой тли. Подходит для людей, страдающих аллергией.</p>
+                                <p class="types-grid__card-text">Полотно сетки антипыль способствует защите от пыльцы и
+                                    мелкой тли. Подходит для людей, страдающих аллергией.</p>
                                 <div class="types-grid__card-price">
                                     <span>Стоимость:</span>
                                     <p>от 3 990 руб/м2</p>
@@ -381,7 +415,8 @@
                         <div class="types-grid__card-wrapper">
                             <div class="types-grid__card-block">
                                 <p class="types-grid__card-title">УльтраВью</p>
-                                <p class="types-grid__card-text">Пропускает больше света и воздуха. Плотное полотно. Экологически безопасно. Имеет антибактериальную защиту.</p>
+                                <p class="types-grid__card-text">Пропускает больше света и воздуха. Плотное полотно.
+                                    Экологически безопасно. Имеет антибактериальную защиту.</p>
                                 <div class="types-grid__card-price">
                                     <span>Стоимость:</span>
                                     <p>от 1 690 руб/м2</p>
@@ -430,7 +465,8 @@
                         <img src="./img/icons-5.svg" alt="icon" class="why__card-img">
                     </div>
                     <div class="why__card">
-                        <p class="why__card-text">Сетки больших размеров, нестандартные сетки, делаем усиленный профиль</p>
+                        <p class="why__card-text">Сетки больших размеров, нестандартные сетки, делаем усиленный профиль
+                        </p>
                         <img src="./img/icons-6.svg" alt="icon" class="why__card-img">
                     </div>
                 </div>
@@ -440,7 +476,8 @@
             <div class="container">
                 <h2 class="title how__title">Как мы установим Вам<br> москитные сетки <span>всего за 1 день</span></h2>
                 <h3 class="how__subtitle">
-                    Мы приезжаем к Вам один раз, а не два (замер/установка). Таким образом сокращаются затраты времени и транспортные расходы. Мы ценим общее время.
+                    Мы приезжаем к Вам один раз, а не два (замер/установка). Таким образом сокращаются затраты времени и
+                    транспортные расходы. Мы ценим общее время.
                 </h3>
                 <div class="how__grid">
                     <div class="how__card">
@@ -456,7 +493,8 @@
                     <div class="how__card">
                         <div class="how__card-img"><img src="./img/how-3.svg" alt="icon"></div>
                         <p class="how__card-title">Замер и монтаж</p>
-                        <p class="how__card-text">Перемерим размеры и пересчитаем итоговую стоимость. Соберем сетку на месте и установим ее в проем.</p>
+                        <p class="how__card-text">Перемерим размеры и пересчитаем итоговую стоимость. Соберем сетку на
+                            месте и установим ее в проем.</p>
                     </div>
                     <div class="how__card">
                         <div class="how__card-img"><img src="./img/how-4.svg" alt="icon"></div>
@@ -520,17 +558,20 @@
                     <div class="setup__card setup__card_1">
                         <div class="setup__card-img"><img src="./img/setup-1.svg" alt="icon"></div>
                         <p class="setup__card-title">Качественная установка</p>
-                        <p class="setup__card-text">При установке мы используем только металлические крепления, что гарантирует долговечность использования.</p>
+                        <p class="setup__card-text">При установке мы используем только металлические крепления, что
+                            гарантирует долговечность использования.</p>
                     </div>
                     <div class="setup__card setup__card_2">
                         <div class="setup__card-img"><img src="./img/setup-2.svg" alt="icon"></div>
                         <p class="setup__card-title">Любая конфигурация</p>
-                        <p class="setup__card-text">Изготовим москитную сетку для больших и нестандартных проемов. Мы любим сложные и интересные задачи.</p>
+                        <p class="setup__card-text">Изготовим москитную сетку для больших и нестандартных проемов. Мы
+                            любим сложные и интересные задачи.</p>
                     </div>
                     <div class="setup__card setup__card_3">
                         <div class="setup__card-img"><img src="./img/setup-3.svg" alt="icon"></div>
                         <p class="setup__card-title">Любой цвет</p>
-                        <p class="setup__card-text">Всегда в наличии стандартные цвета - белый, коричневый и антрацит. Остальные цвета RAL рассчитываются индивидуально.</p>
+                        <p class="setup__card-text">Всегда в наличии стандартные цвета - белый, коричневый и антрацит.
+                            Остальные цвета RAL рассчитываются индивидуально.</p>
                     </div>
                 </div>
             </div>
@@ -574,6 +615,7 @@
             </div>
         </section>
         <section class="example">
+            <div class="anchor" id="example"></div>
             <div class="container">
                 <h2 class="title example__title">Примеры наших работ</h2>
             </div>
@@ -581,13 +623,14 @@
                 <div class="example__buttons">
                     <button class="example__button prev">
                         <svg width="9" height="14" viewBox="0 0 9 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M8 1L1 7L8 13" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
-                        </svg>                        
+                            <path d="M8 1L1 7L8 13" stroke="white" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
                     </button>
                     <button class="example__button next">
                         <svg width="9" height="14" viewBox="0 0 9 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M1 13L8 7L1 0.999999" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
-                        </svg>                        
+                            <path d="M1 13L8 7L1 0.999999" stroke="white" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                        </svg>
                     </button>
                 </div>
                 <div class="swiper-wrapper">
@@ -615,7 +658,94 @@
             </div>
             <div class="swiper-pagination example__pagination"></div>
         </section>
+        <section class="use">
+            <div class="container">
+                <h2 class="title use__title">Используем только<br> качественные материалы</h2>
+                <div class="use__grid">
+                    <div class="use__card">
+                        <div class="use__card-img"><img src="./img/use-1.jpg" alt="image"></div>
+                        <p class="use__card-title">
+                            Легко монтируются и демонтируются.
+                        </p>
+                        <p class="user__card-text">Вы можете легко снять сетки в холодное время года.</p>
+                    </div>
+                    <div class="use__card">
+                        <div class="use__card-img"><img src="./img/use-2.png" alt="image"></div>
+                        <p class="use__card-title">Только металлические крепления.</p>
+                        <p class="use__card-text">Сетка будет надежно стоять даже на высоких этажах.</p>
+                    </div>
+                    <div class="use__card">
+                        <div class="use__card-img"><img src="./img/use-3.png" alt="image"></div>
+                        <p class="use__card-title">Смотрятся стильно и современно.</p>
+                        <p class="use__card-text">Создадут стильный интерьер в Вашем доме.</p>
+                    </div>
+                    <div class="use__card">
+                        <div class="use__card-img"><img src="./img/use-4.png" alt="image"></div>
+                        <p class="use__card-title">Не ограничивают угол обзора.</p>
+                        <p class="use__card-text">Позволят Вам наслаждаться привычным пейзажем</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="callback">
+            <div class="container">
+                <div class="callback__wrapper">
+                    <h2 class="title callback__title">Установим сетки на<br> окна в день обращения</h2>
+                    <p class="callback__subtitle">Без дополнительных выездов на замер</p>
+                    <button class="button callback__button" toggle="#callback">Заказать москитную сетку</button>
+                    <img src="./img/callback-1.png" alt="image" class="callback__image callback__image_1">
+                    <img src="./img/callback-1.png" alt="image" class="callback__image callback__image_2">
+                </div>
+            </div>
+        </section>
+        <section class="contacts">
+            <div class="anchor" id="contacts"></div>
+            <div class="container">
+                <div class="contacts__wrapper">
+                    <div class="contacts__block">
+                        <h3 class="contacts__title">Наши контакты</h3>
+                        <a href="tel:79999999999" class="contacts__phone" data-phone="utm">+7 (999) 999-99-99</a>
+                        <a href="mailto:maskitnaa@setka.com" class="contacts__mail">maskitnaa@setka.com</a>
+                        <p class="contacts__address">Подробный адрес предприятия</p>
+                        <p class="contacts__time">ежедневно с 9 до 21:00</p>
+                    </div>
+                    <div class="contacts__map">
+                        <script type="text/javascript" charset="utf-8" async
+                            src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Ac7083491cb8622fdb664d2c6d45d873a0a5916e56a0f36d8ec4c8bac28eb39c5&amp;width=100%25&amp;height=100%25&amp;lang=ru_RU&amp;scroll=false"></script>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__wrapper">
+                <a href="/" class="footer__logo"><img src="./img/ico-header-logo.svg" alt="logo-image"></a>
+                <div class="footer__controls">
+                    <nav class="footer__nav">
+                        <ul class="footer__list">
+                            <li class="footer__list-item"><a href="#types" class="footer__list-link" scroll>Типы
+                                    конструкций</a></li>
+                            <li class="footer__list-item"><a href="#types-grid" class="footer__list-link" scroll>Типы
+                                    полотен</a>
+                            </li>
+                            <li class="footer__list-item"><a href="#example" class="footer__list-link"
+                                    scroll>Портфолио</a>
+                            </li>
+                            <li class="footer__list-item"><a href="#reviews" class="footer__list-link" scroll>Отзывы</a>
+                            </li>
+                            <li class="footer__list-item"><a href="#contacts" class="footer__list-link"
+                                    scroll>Контакты</a></li>
+                        </ul>
+                    </nav>
+                    <div class="footer__info">
+                        <a href="tel:79999999999" class="footer__phone" data-phone="utm">+7 (999) 999-99-99</a>
+                        <p class="footer__time">ежедневно с 9 до 21:00</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
     <div class="overlay" id="callback">
         <div class="modal">
             <a href="#" class="modal__close" toggle="#callback">
@@ -632,14 +762,14 @@
                 </svg>
             </a>
             <div class="modal__body">
-                <div class="modal__title">Закажите звонок</div>
+                <div class="modal__title">Оставить заявку на маскитную сетку</div>
                 <div class="modal__message">
-                    Оставьте контакты и наш менеджер свяжется с Вами в ближайшее время.
+                    оставьте свои контакты и мы свяжемся с вами для уточнения деталей
                 </div>
                 <form action="#" class="modal__form">
+                    <input type="text" name="name" placeholder="Имя" class="modal__form-input modal__from-normal">
                     <input type="text" name="phone" placeholder="+7 (999) 999-99-99"
                         class="modal__form-input modal__from-requried" data-input="masked">
-                    <input type="text" name="name" placeholder="Имя" class="modal__form-input modal__from-normal">
                     <div class="modal__form-error">Пожалуйста, заполните все обязательные поля</div>
                     <div class="modal__form-success">Спасибо! Данные успешно отправлены.</div>
                     <button type="submit" class="button modal__form-button">Отправить</button>
